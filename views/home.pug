@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+    
+block content
+
+    section#introSection
+        div Welcome to Siam's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+
+    section#mission-Section
+        h2 Our Mission
+        div.cardSection
+             div.card
+                h3 This Is Card
+                .card-box 
+                 div.card-img
+                  img(src="../static/img/1.png")
+                 div.card-content
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.
+
+             div.card
+                h3 This Is Card
+                .card-box 
+                 div.card-img
+                  img(src="../static/img/2.png")
+                 div.card-content
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.
+
+             div.card
+                h3 This Is Card
+                .card-box 
+                 div.card-img
+                  img(src="../static/img/3.png")
+                 div.card-content
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        .sponsor 
+            img(src="../static/img/logo1.png", alt="", Class="sponsor-img")
+            img(src="../static/img/logo2.png", alt="", Class="sponsor-img")
+            img(src="../static/img/logo3.png", alt="", Class="sponsor-img")
+            img(src="../static/img/logo4.png", alt="", Class="sponsor-img")

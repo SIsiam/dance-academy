@@ -1,0 +1,64 @@
+//- index.pug
+doctype html
+html
+  head
+    title Siam Dance Club
+    style
+      include ../static/style.css
+  body
+  nav#navbar
+    ul
+        div#logo
+          img(src="../static/img/logo.png")
+          | SDA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Contact Us]
+
+section#introSection
+    div Welcome to Siam's Dance Academy
+    div.small Eat Sleep Dance Repeat
+section#mission-Section
+    h2 Our Mission
+    div.cardSection
+      div.card
+          h3 This Is Card
+          .card-box 
+            div.card-img
+              img(src="../static/img/1.png")
+            div.card-content
+               p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.
+
+      div.card
+          h3 This Is Card
+          .card-box 
+            div.card-img
+              img(src="../static/img/2.png")
+            div.card-content
+               p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.
+
+      div.card
+          h3 This Is Card
+          .card-box 
+            div.card-img
+              img(src="../static/img/3.png")
+            div.card-content
+               p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.
+
+
+
+section#sponsorsSection
+    h2 Our Sponsors
+    .sponsor 
+       img(src="../static/img/logo1.png", alt="", Class="sponsor-img")
+       img(src="../static/img/logo2.png", alt="", Class="sponsor-img")
+       img(src="../static/img/logo3.png", alt="", Class="sponsor-img")
+       img(src="../static/img/logo4.png", alt="", Class="sponsor-img")
+
+footer#footer
+    p &#169; 2021 siamdanceclub.com | All Right Reserved
+
+    script
+      include ../static/index.js
